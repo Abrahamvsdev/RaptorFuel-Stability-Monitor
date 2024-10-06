@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Sistema de Monitoreo de Carga Starship</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/aesthetic.css" />
+</head>
+<body>
+    <div class="page-container">
+        <div class="content-wrap">
+            @RenderBody()
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2024 - Sistema de Monitoreo de Carga Starship - <a href="/Home/Privacy">Privacy</a></p>
+            </div>
+        </footer>
+    </div>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

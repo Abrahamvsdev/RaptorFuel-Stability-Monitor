@@ -1,0 +1,40 @@
+﻿@model StarshipModel
+@{
+    ViewData["Title"] = "Monitoreo de Carga Starship";
+    Layout = "_StarshipLayout";
+}
+
+<div class="container">
+    <h1 class="title">Sistema de Monitoreo de Carga Starship</h1>
+
+    <div class="card">
+        <form asp-action="CalcularDistribucionCarga" method="post">
+            <div class="form-group">
+                <label asp-for="CargaPaylload">Carga de Payload:</label>
+                <input asp-for="CargaPaylload" type="number" class="form-control" placeholder="Ingrese la carga de payload" min="0" max="100" />
+            </div>
+            <div class="form-group">
+                <label asp-for="CargaPropellant">Carga de Propelente:</label>
+                <input asp-for="CargaPropellant" type="number" class="form-control" placeholder="Ingrese la carga de propelente" min="0" max="100" />
+            </div>
+            <div class="form-group">
+                <label asp-for="CargaLifeSupport">Carga de Sistemas de Soporte Vital:</label>
+                <input asp-for="CargaLifeSupport" type="number" class="form-control" placeholder="Ingrese la carga de sistemas de soporte vital" min="0" max="100" />
+            </div>
+            <button type="submit" class="btn">Calcular Distribución de Carga</button>
+        </form>
+    </div>
+
+    @if (!string.IsNullOrEmpty(Model.EstadoEstabilidad)){
+        <div class="card result @(Model.EstadoEstabilidad == "Óptimo" ? "stable" : "unstable")">
+            <h2>Resultado del Análisis</h2>
+            <p class="status">Estado de la Carga: @Model.EstadoEstabilidad</p>
+            <p class="message">@Model.MensajeAlerta</p>
+        </div>
+    }
+
+    <div class="card info">
+        <h2>Acerca de Starship</h2>
+        <p>Starship es el sistema de transporte completamente reutilizable de SpaceX, diseñado para misiones a la órbita terrestre, la Luna, Marte y más allá. La distribución óptima de la carga es fundamental para el éxito de cada lanzamiento y misión de Starship.</p>
+    </div>
+</div>

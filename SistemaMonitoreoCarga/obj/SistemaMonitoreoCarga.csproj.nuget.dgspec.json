@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\abran\\Desktop\\SistemaMonitoreoCarga\\SistemaMonitoreoCarga\\SistemaMonitoreoCarga.csproj": {}
+    "C:\\Users\\abran\\Desktop\\SistemaMonitoreoCarga\\SistemaMonitoreoCarga\\SistemaMonitoreoCarga.csproj": {}
   },
   "projects": {
-    "c:\\Users\\abran\\Desktop\\SistemaMonitoreoCarga\\SistemaMonitoreoCarga\\SistemaMonitoreoCarga.csproj": {
+    "C:\\Users\\abran\\Desktop\\SistemaMonitoreoCarga\\SistemaMonitoreoCarga\\SistemaMonitoreoCarga.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\abran\\Desktop\\SistemaMonitoreoCarga\\SistemaMonitoreoCarga\\SistemaMonitoreoCarga.csproj",
+        "projectUniqueName": "C:\\Users\\abran\\Desktop\\SistemaMonitoreoCarga\\SistemaMonitoreoCarga\\SistemaMonitoreoCarga.csproj",
         "projectName": "SistemaMonitoreoCarga",
-        "projectPath": "c:\\Users\\abran\\Desktop\\SistemaMonitoreoCarga\\SistemaMonitoreoCarga\\SistemaMonitoreoCarga.csproj",
+        "projectPath": "C:\\Users\\abran\\Desktop\\SistemaMonitoreoCarga\\SistemaMonitoreoCarga\\SistemaMonitoreoCarga.csproj",
         "packagesPath": "C:\\Users\\abran\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\abran\\Desktop\\SistemaMonitoreoCarga\\SistemaMonitoreoCarga\\obj\\",
+        "outputPath": "C:\\Users\\abran\\Desktop\\SistemaMonitoreoCarga\\SistemaMonitoreoCarga\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\abran\\AppData\\Roaming\\NuGet\\NuGet.Config"

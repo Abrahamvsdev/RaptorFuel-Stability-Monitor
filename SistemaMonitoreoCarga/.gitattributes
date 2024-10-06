@@ -1,1 +1,7 @@
 *.cs linguist-language=CSharp
+*.cs linguist-detectable
+*.csproj linguist-detectable
+*.sln linguist-detectable
+*.html linguist-vendored
+*.css linguist-vendored
+*.js linguist-vendored
